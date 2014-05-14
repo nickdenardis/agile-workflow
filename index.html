@@ -83,6 +83,10 @@
 						<p>2-10 people, local preferred</p>
 					</section>
 					<section>
+						<h2>This talk is about Web software</h2>
+						<p>Anything else you take away from it is a bonus</p>
+					</section>
+					<section>
 						<h2>My team != Your team</h2>
 						<p>Not a step by step guide</p>
 					</section>
@@ -117,6 +121,10 @@
 				</section>
 
 				<section>
+					<section>
+						<h2>Mistakes</h2>
+						<p>I/we as a group have made a lot.</p>
+					</section>
 					<section>
 						<h2>What's wrong with waterfall?</h2>
 						<p class="fragment">Semantic Diffusion</p>
@@ -172,10 +180,23 @@
 						<p class="fragment">If it isn't in the cycle, it isn't important</p>
 					</section>
 
+					<section data-background="images/sprint-board.jpg">
+
+					</section>
+
+					<section data-background="images/tp3-board.png">
+
+					</section>
+
 					<section>
 						<h2>Walking Skeleton vs Thin vertical slice</h2>
 						<p class="fragment">Walking Skeleton: tiny implementation that performs end-to-end function.</p>
 						<p class="fragment">Thin vertical slice: layer of the implementation that spans every component.</p>
+					</section>
+
+					<section>
+						<h2>Continious integration/deployment</h2>
+						<p><img src="images/codeship.png" /></p>
 					</section>
 				</section>
 
@@ -193,6 +214,17 @@
 					<section>
 						<h2>Collaboration vs Cooperation</h2>
 						<p>Introduce feedback loops as early as as often as possible.</p>
+					</section>
+
+					<section>
+						<h2>Cooperation</h2>
+						<p>Going along with someone else's idea, they have already figured it out and you're along for the ride.</p>
+					</section>
+
+					<section>
+						<h2>Collaboration</h2>
+						<p>Build something together, something new happens.</p>
+						<p class="fragment">Working then handing off and pipelining means there isn’t a collective knowledge unless you document it</p>
 					</section>
 
 					<section>
@@ -223,6 +255,71 @@
 						<h2>Success</h2>
 						<p>What does it look like?</p>
 					</section>
+
+					<section>
+						<h2>Planning up front</h2>
+						<p>success == according to plan</p>
+					</section>
+
+					<section>
+						<h2>Adaptive planning</h2>
+						<p>Plan and execute many times on a project</p>
+						<p class="fragment">(every sprint)</p>
+					</section>
+
+					<section>
+						<h2>Point North</h2>
+						<p><img src="images/north.png" /></p>
+						<p><a href="http://pointnorth.io/">http://pointnorth.io/</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>No estimates, only budgets</h2>
+						<p class="fragment">Basecamp just posted a good article that sums it up.</p>
+						<p class="fragment"><a href="https://signalvnoise.com/posts/3746-drive-development-with-budgets-not-estimates">Drive development with budgets not estimates</a></p>
+					</section>
+					<section>
+						<p><img src="images/sprint-plan.png" /></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>XP/Pairing/Swarming</h2>
+					</section>
+					<section>
+						<h2>Why waste the time of two people on a single task?</h2>
+					</section>
+					<section>
+						<h2>Include the client?</h2>
+						<p class="fragment">As often as possible.</p>
+					</section>
+					<section>
+						<h2>Have your clients write/sign off on acceptance tests</h2>
+						<p class="fragment">WAT?!?</p>
+					</section>
+					<section>
+						<h2>Acceptance Tests</h2>
+						<p>A php framework for testing your business expectations.</p>
+						<p><a href="http://behat.org/">Behat</a></p>
+					</section>
+					<section>
+						<pre>
+Scenario: Any user should be able to view the website listing page
+    Given I login as a regular user
+    And I am on "/sites"
+    Then I should see "Websites"
+	</pre>
+	<pre>
+Scenario: Admin users should be able to add a website
+    Given I login as an admin user
+    And I am on "/sites"
+    And I follow "Add Site"
+    Then I should see the site form
+	</pre>
+					</section>
 				</section>
 
 				<section>
@@ -231,6 +328,7 @@
 						<li><a href="http://agilemanifesto.org/">Agile Manifesto</a></li>
 						<li><a href="http://pointnorth.io/#north">Point North</a></li>
 						<li><a href="https://signalvnoise.com/posts/3746-drive-development-with-budgets-not-estimates">Drive development with budgets not estimates</a></li>
+						<li><a href="https://www.codeship.io/">Codeship.io - Continious integration and deployment.</a></p>
 						<li><a href="https://github.com/nickdenardis/agile-workflow">This talk on GitHub</a></li>
 						<li><a href="https://twitter.com/nickdenardis">Follow me on Twitter</a></li>
 					</ul>
