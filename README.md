@@ -14,6 +14,6 @@ You can find Nick [on the web](http://nickdenardis.com) on [Twitter](https://twi
 To view the presentation
 ==============
 
-* git clone git@github.com:nickdenardis/agile-workflow.git
-* git submodule update --init --recursive
-* open index.html
+* `git clone git@github.com:nickdenardis/agile-workflow.git`
+* `git submodule update --init --recursive`
+* `open index.html`
