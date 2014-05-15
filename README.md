@@ -10,3 +10,10 @@ Nick DeNardis leads the strategy, execution, and implementation of all public fa
 He previously hosted a video podcast called EDU Checkup, where he reviewed higher education websites from the perspective of a first time visitor. The podcast examined the websites visuals, information and code which resulted in an A-F “grade” overall. Nick is also an organizer of Refresh Detroit, he is the technical director for TEDxDetroit, avid conference speaker and teacher for Girl Develop It.
 
 You can find Nick [on the web](http://nickdenardis.com) on [Twitter](https://twitter.com/nickdenardis).
+
+To view the presentation
+==============
+
+* git clone git@github.com:nickdenardis/agile-workflow.git
+* git submodule update --init --recursive
+* open index.html
