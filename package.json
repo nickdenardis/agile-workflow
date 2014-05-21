@@ -1,0 +1,20 @@
+{
+  "name": "agile-workflow",
+  "version": "1.0.0",
+  "description": "Using agile to transform “clients” in to “partners”",
+  "keywords": [
+    "agile",
+    "workflow",
+    "web",
+    "agency",
+    "client"
+  ],
+  "homepage": "https://github.com/nickdenardis/agile-workflow",
+  "bugs": "https://github.com/nickdenardis/agile-workflow/issues",
+  "author": {
+    "name": "Nick DeNardis",
+    "email": "nick.denardis@gmail.com",
+    "url": "http://nickdenardis.com/"
+  },
+  "main": "index.html",
+}
