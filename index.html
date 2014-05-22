@@ -241,6 +241,43 @@
 
 				<section>
 					<section>
+						<h2>Responding to change</h2>
+					</section>
+
+					<section>
+						<h2>Success</h2>
+						<p>What does it look like?</p>
+					</section>
+
+					<section>
+						<h2>Planning up front</h2>
+						<p>success == according to plan</p>
+					</section>
+
+					<section>
+						<h2>Adaptive planning</h2>
+						<p>Plan and execute many times on a project</p>
+						<p class="fragment">(every sprint)</p>
+					</section>
+
+					<section>
+						<h2>Point North</h2>
+						<p><img src="images/north.png" /></p>
+						<p><a href="http://pointnorth.io/">http://pointnorth.io/</a></p>
+					</section>
+
+					<section>
+						<h2>Align and Guide Your Project</h2>
+						<p>North is a set of standards and best practices for developing modern web based properties. Included are standards and best practices for all aspects of a project, from kick off through development. North encourages an agile, content-first, approach to product development and a mobile-first, in-browser, system based approach to design and development.</p>
+					</section>
+
+					<section>
+						<p><img src="images/sprint-plan.png" /></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
 						<h2>Working software</h2>
 					</section>
 
@@ -290,40 +327,12 @@
 
 				<section>
 					<section>
-						<h2>Responding to change</h2>
-					</section>
-
-					<section>
-						<h2>Success</h2>
-						<p>What does it look like?</p>
-					</section>
-
-					<section>
-						<h2>Planning up front</h2>
-						<p>success == according to plan</p>
-					</section>
-
-					<section>
-						<h2>Adaptive planning</h2>
-						<p>Plan and execute many times on a project</p>
-						<p class="fragment">(every sprint)</p>
-					</section>
-
-					<section>
-						<h2>Point North</h2>
-						<p><img src="images/north.png" /></p>
-						<p><a href="http://pointnorth.io/">http://pointnorth.io/</a></p>
-					</section>
-				</section>
-
-				<section>
-					<section>
 						<h2>No estimates, only budgets</h2>
 						<p class="fragment">Basecamp just posted a good article that sums it up.</p>
 						<p class="fragment"><a href="https://signalvnoise.com/posts/3746-drive-development-with-budgets-not-estimates">Drive development with budgets not estimates</a></p>
 					</section>
 					<section>
-						<p><img src="images/sprint-plan.png" /></p>
+						<p><img src="images/budget.png" /></p>
 					</section>
 				</section>
 
@@ -332,7 +341,8 @@
 						<h2>XP/Pairing/Swarming</h2>
 					</section>
 					<section>
-						<h2>Why waste the time of two people on a single task?</h2>
+						<h2>Why waste the time of multiple people on a single task?</h2>
+						<p><img src="images/group-work1.jpg" /></p>
 					</section>
 					<section>
 						<h2>Include the client?</h2>
@@ -349,25 +359,41 @@
 					</section>
 					<section>
 						<pre>
-Scenario: Any user should be able to view the website listing page
-    Given I login as a regular user
-    And I am on "/sites"
-    Then I should see "Websites"
-	</pre>
-	<pre>
-Scenario: Admin users should be able to add a website
-    Given I login as an admin user
-    And I am on "/sites"
-    And I follow "Add Site"
-    Then I should see the site form
-	</pre>
+<strong>Feature: News Items</strong>
+  In order to announce highlights we need a place on the homepage
+  As a user
+  I should be able to see updates from the department
+
+  <strong>Scenario:</strong> The news area on the homepage should disappear if there are no news
+    Given there are no active news items
+    And I am on "/"
+    Then I should not see "News & Announcements"
+
+  <strong>Scenario:</strong> The news area on the homepage should show a max of four items
+    Given there are five news active news items
+    And I am on "/"
+    Then I should only see four items
+    Then I should see "More news items"
+</pre>
+					</section>
+					<section>
+						<p><img src="images/behat.png" /></p>
+					</section>
+					<section>
+						<p><img src="images/behat-code.png" /></p>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Recap</h2>
-						<p></p>
+						<p>agile, not Agile</p>
+						<p>Retrospectives</p>
+						<p>Customer collaboration</p>
+						<p>Working software every release</p>
+						<p>Defined release schedule</p>
+						<p>Budgets, not estimates</p>
+						<p>Pairing/swarming</p>
 					</section>
 					<section>
 						<h2>My hope</h2>
@@ -392,7 +418,8 @@ Scenario: Admin users should be able to add a website
 
 				<section>
 					<h1>THE END</h1>
-					<h3>BY Nick DeNardis / @nickdenardis</h3>
+					<h3>BY Nick DeNardis / <a href="https://twitter.com/nickdenardis">@nickdenardis</a></h3>
+					<p><a href="https://github.com/nickdenardis/agile-workflow">https://github.com/nickdenardis/agile-workflow</a></p>
 				</section>
 
 			</div>
